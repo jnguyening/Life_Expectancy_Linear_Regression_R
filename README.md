@@ -1,3 +1,3 @@
 # Life Expectancy Analysis with R
 
-This repository contains R scripts, data, and documentation for an analysis project focused on life expectancy. The project aims to explore factors affecting life expectancy and create data-driven insights using R for data analysis and visualization.
+This repository contains an R project that explores the relationship between various factors and life expectancy using linear regression analysis. The project aims to build a predictive model for life expectancy and gain insights into the key determinants of life expectancy.
