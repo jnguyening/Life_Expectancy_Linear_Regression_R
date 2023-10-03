@@ -12,6 +12,6 @@ Linear regression is used for various purposes, including:
 - Model Evaluation: It provides a simple and interpretable model that can be evaluated using various metrics to assess its performance.
 - Feature Selection: Linear regression can be used to identify the most important predictors in a dataset.
 
-Linear regression has various extensions and variations, such as ridge regression and lasso regression, which are used when dealing with multicollinearity and overfitting issues.
+This project focuses on implementing Multiple Linear Regression using R code on World Life Expectancy data.
 
 
