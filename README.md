@@ -14,4 +14,4 @@ Linear regression is used for various purposes, including:
 
 Linear regression has various extensions and variations, such as ridge regression and lasso regression, which are used when dealing with multicollinearity and overfitting issues.
 
-\[ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_p X_p + \epsilon \]
+
