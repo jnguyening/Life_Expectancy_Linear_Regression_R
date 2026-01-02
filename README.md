@@ -7,7 +7,7 @@ What truly determines how long we live? This project utilizes the WHO Life Expec
 The initial model faced challenges common in real-world data: heteroscedasticity and high correlation between variables like "Under-5 Deaths" and "Infant Mortality." By applying Information Theoretic Multimodel Selection, I identified that Adult Mortality, Income, HIV/AIDS (log), GDP (log), Hepatitis B, Polio, and Thinness were the most significant drivers of the model. To satisfy the Gauss-Markov assumptions, I implemented cubic transformations on immunization data and log-scaling on economic data. The final model provides a refined lens into global health, showing that while economic factors like GDP are vital, specific health interventions like Polio and HepB immunization have a non-linear, compounding positive effect on life expectancy.
 
 ### Final Model
-$$ \text{LifeExpectancy} = \beta_0 + \beta_1(\text{AdultMortality}) + \beta_2(\text{HepB}^3) + \beta_3(\text{Polio}^3) + \beta_4(\text{Income}) + \beta_5(\log\text{HIV}) + \beta_6(\log\text{GDP}) + \beta_7(\log\text{Thin5\_9}) + \epsilon $$
+$$ \text{LifeExpectancy} = \beta_0 + \beta_1(\text{AdultMortality}) + \beta_2(\text{HepB}^3) + \beta_3(\text{Polio}^3) + \beta_4(\text{Income}) + \beta_5(\log\text{HIV}) + \beta_6(\log\text{GDP}) + \beta_7(\log\text{Thin5}\_\text{9}) + \epsilon $$
 
 ### Final Model Summary Table
 
