@@ -1,17 +1,9 @@
-# Life Expectancy Analysis with R
+# Global Life Expectancy: A Multiple Linear Regression Analysis
 
-This repository contains an R project that explores the relationship between various factors and life expectancy using multiple linear regression analysis. The project aims to build a predictive model for life expectancy and gain insights into the key determinants of life expectancy.
+## Overview
 
-## About
+What truly determines how long we live? This project utilizes the WHO Life Expectancy dataset to build a predictive framework that balances health interventions with economic indicators. Using R, the study moves through the "Life Cycle" of a regression project.
 
-Linear regression is used for various purposes, including: 
-
-- Prediction: Given a set of predictor values, you can use the linear regression model to predict the value of the dependent variable.
-- Understanding Relationships: Linear regression helps in understanding how changes in one or more independent variables are associated with changes in the dependent variable.
-- Hypothesis Testing: You can use linear regression to test hypotheses about the relationships between variables and assess their statistical significance.
-- Model Evaluation: It provides a simple and interpretable model that can be evaluated using various metrics to assess its performance.
-- Feature Selection: Linear regression can be used to identify the most important predictors in a dataset.
-
-This project focuses on implementing Multiple Linear Regression using R code on World Life Expectancy data.
+The initial model faced challenges common in real-world data: heteroscedasticity and high correlation between variables like "Under-5 Deaths" and "Infant Mortality." By applying Information Theoretic Multimodel Selection, I identified that Adult Mortality, Income, HIV/AIDS (log), GDP (log), Hepatitis B, Polio, and Thinness were the most significant drivers of the model. To satisfy the Gauss-Markov assumptions, I implemented cubic transformations on immunization data and log-scaling on economic data. The final model provides a refined lens into global health, showing that while economic factors like GDP are vital, specific health interventions like Polio and HepB immunization have a non-linear, compounding positive effect on life expectancy.
 
 
