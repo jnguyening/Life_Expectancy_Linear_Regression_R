@@ -6,10 +6,10 @@ In this study, I applied advanced statistical methodologies in R to model the dr
 
 By leveraging the leaps package for subset selection and the car package for diagnostics, I moved from a high-dimensional model of 16 predictors to a refined 7-variable model. This process involved handling real-world data challenges, such as heteroscedasticity and non-linearity, by applying logarithmic scaling to economic indicators (GDP) and power transformations to immunization data (Polio/HepB). The final model serves as a validated framework for understanding how socio-economic resources and health interventions non-linearly compound to influence human longevity.
 
-### Final Model
+## Final Model
 $$ \text{LifeExpectancy} = \beta_0 + \beta_1(\text{AdultMortality}) + \beta_2(\text{HepB}^3) + \beta_3(\text{Polio}^3) + \beta_4(\text{Income}) + \beta_5(\log\text{HIV}) + \beta_6(\log\text{GDP}) + \beta_7(\log\text{Thin5-9}) + \epsilon $$
 
-### Final Model Summary Table
+## Final Model Summary Table
 
 | Variable           | Estimate (β) | P-Value  | Significance |
 |--------------------|--------------|----------|--------------|
