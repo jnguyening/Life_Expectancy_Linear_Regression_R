@@ -2,9 +2,9 @@
 
 ## Overview
 
-What truly determines how long we live? This project utilizes the WHO Life Expectancy dataset to build a predictive framework that balances health interventions with economic indicators. Using R, the study moves through the "Life Cycle" of a regression project.
+In this study, I applied advanced statistical methodologies in R to model the drivers of global life expectancy. Beyond simple correlation, this project focuses on the predictive reliability and mathematical validity of the regression model.
 
-The initial model faced challenges common in real-world data: heteroscedasticity and high correlation between variables like "Under-5 Deaths" and "Infant Mortality." By applying Information Theoretic Multimodel Selection, I identified that Adult Mortality, Income, HIV/AIDS (log), GDP (log), Hepatitis B, Polio, and Thinness were the most significant drivers of the model. To satisfy the Gauss-Markov assumptions, I implemented cubic transformations on immunization data and log-scaling on economic data. The final model provides a refined lens into global health, showing that while economic factors like GDP are vital, specific health interventions like Polio and HepB immunization have a non-linear, compounding positive effect on life expectancy.
+By leveraging the leaps package for subset selection and the car package for diagnostics, I moved from a high-dimensional model of 16 predictors to a refined 7-variable model. This process involved handling real-world data challenges, such as heteroscedasticity and non-linearity, by applying logarithmic scaling to economic indicators (GDP) and power transformations to immunization data (Polio/HepB). The final model serves as a validated framework for understanding how socio-economic resources and health interventions non-linearly compound to influence human longevity.
 
 ### Final Model
 $$ \text{LifeExpectancy} = \beta_0 + \beta_1(\text{AdultMortality}) + \beta_2(\text{HepB}^3) + \beta_3(\text{Polio}^3) + \beta_4(\text{Income}) + \beta_5(\log\text{HIV}) + \beta_6(\log\text{GDP}) + \beta_7(\log\text{Thin5-9}) + \epsilon $$
